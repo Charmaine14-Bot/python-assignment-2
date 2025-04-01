@@ -1,30 +1,30 @@
-# Define a function to perform mathematical operations
-def math_operation(num1, num2, operation):
-    if operation == "+":
-        return num1 + num2
-    elif operation == "-":
-        return num1 - num2
-    elif operation == "*":
-        return num1 * num2
-    elif operation == "/":
-        if num2 != 0:
-            return num1 / num2
-        else:
-            return "Error: Division by zero is not allowed"
-    else:
-        return "Error: Invalid operation"
+# Create an empty list called my_list
+my_list = []
 
-# Main program
-def main():
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    operation = input("Enter the operation (+, -, *, /): ")
-    result = math_operation(num1, num2, operation)
-    print(f"The result of {num1} {operation} {num2} is: {result}")
+# Append the following elements to my_list: 10, 20, 30, 40
+# Append 10, 20, 30, and 40 to my_list
+my_list.append(10)
+my_list.append(20)  
+my_list.append(30)
+my_list.append(40)
+print("After inserting 15 at the second position:", my_list)
 
-# Call the main function
-if __name__ == "__main__":
-    main()
-    
+# Insert 15 at the second position in my_list
+my_list.insert(1, 15)
+print("After inserting 15 at the second position:", my_list)
 
-    
+# Extend my_list with the following elements: 50, 60, 70
+my_list.extend([50, 60, 70])
+print("After extending with 50, 60, 70:", my_list)
+
+# Remove the last element from my_list
+my_list.pop()
+print("After removing the last element:", my_list)
+
+# Sort my_list in ascending order
+my_list.sort()
+print("After sorting in ascending order:", my_list)
+
+# Find and print the index of the element 30 in my_list
+index_of_30 = my_list.index(30)
+print("Index of 30:", index_of_30)
